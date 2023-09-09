@@ -7,9 +7,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: goldenrod;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Reset CSS for all input elements */
+input {
+  /* Reset styles to default values */
+  font-family: initial; /* Set the font-family to the default value */
+  color: initial; /* Set the text color to the default value */
+  border: initial; /* Reset border properties to default */
+  /* Add any other default styles as needed */
 }
