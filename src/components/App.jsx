@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 export const Home = lazy(() => import('./views/HomeViews.jsx/HomeViews'));
 export const Login = lazy(() => import('./views/LoginView/LoginView'));
 export const ContactBook = lazy(() => import('./Contacts/PhoneBook'));
-// export const NotFound = lazy(() => import('./views/NotFound/NotFound'));
+export const NotFound = lazy(() => import('./views/NotFound/NotFound'));
 export const Register = lazy(() => import('./views/RegisterView/RegisterView'));
 
 export const App = () => {
@@ -32,16 +32,16 @@ export const App = () => {
       {!pendingUserData && (
         <>
           <NavBar />
-          <Suspense fallback={<Loader/>}>
+          <Suspense fallback={<Loader />}>
             <Routes>
               <Route
-  path="/"
-  element={
-    <PublicRoute>
-      <Home />
-    </PublicRoute>
-  }
-/>
+                path="/"
+                element={
+                  <PublicRoute>
+                    <Home />
+                  </PublicRoute>
+                }
+              />
               <Route
                 path="/register"
                 element={
@@ -66,12 +66,14 @@ export const App = () => {
                   </PrivateRoute>
                 }
               />
+              <Route path='*' element={<NotFound/>}></Route>
 
             </Routes>
           </Suspense>
           <ToastContainer
             position="top-center"
             autoClose={2000} />
+
         </>
       )}
     </>

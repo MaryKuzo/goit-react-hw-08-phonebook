@@ -43,7 +43,7 @@ export const StyledItem = styled.li`
   display: flex;
   margin-top: 10px;
   transition: 500ms;
-
+border-radius: 30px;
   justify-content: space-between;
   padding:20px;
 

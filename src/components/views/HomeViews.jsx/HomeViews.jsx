@@ -23,8 +23,8 @@ const Home = () => {
     navigate('/contacts');
   };
   return (
-<ViewContainer style={{ backgroundImage: `url(${phonebookBG})` }}>
-       <TextBox>
+    <ViewContainer style={{ backgroundImage: `url(${phonebookBG})` }}>
+      <TextBox>
         {isLoggedIn ? (
           <>
             <Greetings>

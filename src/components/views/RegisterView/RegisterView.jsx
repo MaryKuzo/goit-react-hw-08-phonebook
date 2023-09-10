@@ -28,7 +28,10 @@ function Copyright(props) {
       {...props}
     >
         {'Copyright © '}
-        <Link color="inherit" href="https://" fontFamily={'Ephesis'}>
+      <Link
+        color="inherit"
+        href="https://marykuzo.github.io/goit-react-hw-08-phonebook/contacts"
+        fontFamily={'Ephesis'}>
           PhoneBook📱
         </Link>{' '}
         {new Date().getFullYear()}

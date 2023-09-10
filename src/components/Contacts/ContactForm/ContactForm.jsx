@@ -52,7 +52,7 @@ export const ContactForm = ({
         onSubmit={handleSubmit}
         validationSchema={schema}
       >
-        {({ handleReset }) => (
+
           <StyledForm>
             <label htmlFor="" style={{
               marginBottom: '10px',
@@ -74,7 +74,7 @@ export const ContactForm = ({
             </label>
             <StyledButton type="submit">{btn1}</StyledButton>
           </StyledForm>
-        )}
+   
       </Formik>
       <CloseButton onClick={e => dispatch(selector(false))}>
        x

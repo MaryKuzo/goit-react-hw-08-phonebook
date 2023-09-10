@@ -47,7 +47,7 @@ export const ContactItem = ({ contact }) => {
         onClick={onEnter}
         onFocus={onEnter}
         onBlur={onBlur}
-        tabIndex={1}
+
       >
         <TextBox>
           <span>{name}</span>
