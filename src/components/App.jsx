@@ -66,7 +66,7 @@ export const App = () => {
                   </PrivateRoute>
                 }
               />
-              {/* <Route path="*" element={<NotFound />} /> */}
+            
             </Routes>
           </Suspense>
           <ToastContainer
