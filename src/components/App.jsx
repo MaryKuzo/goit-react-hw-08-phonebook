@@ -35,13 +35,13 @@ export const App = () => {
           <Suspense fallback={<Loader/>}>
             <Routes>
               <Route
-                path="/"
-                element={
-                  <PublicRoute>
-                    <Home />
-                  </PublicRoute>
-                }
-              />
+  path="/"
+  element={
+    <PublicRoute>
+      <Home />
+    </PublicRoute>
+  }
+/>
               <Route
                 path="/register"
                 element={
@@ -66,7 +66,7 @@ export const App = () => {
                   </PrivateRoute>
                 }
               />
-            
+
             </Routes>
           </Suspense>
           <ToastContainer
